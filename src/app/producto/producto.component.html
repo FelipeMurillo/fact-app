@@ -1,0 +1,39 @@
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+		Productos
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Lista de productos</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p-dataTable [value]="products" [responsive]="true" [rows]="15" [paginator]="true" #dt>
+				        <p-column field="Codigo" header = "Codigo"></p-column>
+				        <p-column field="Descripcion" header="Year"></p-column>
+				        <p-column field="Iva" header="Brand"></p-column>
+				        <p-column field="Ieps" header="Color"></p-column>
+				      </p-dataTable>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>		
